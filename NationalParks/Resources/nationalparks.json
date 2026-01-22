@@ -1,0 +1,203 @@
+[
+    {
+        "name": "Yellowstone National Park",
+        "state": ["Wyoming", "Montana", "Idaho"],
+        "parkAccess": "Always open",
+        "description": "The world’s first national park and one of the most geologically active regions on Earth. Yellowstone is renowned for its extraordinary concentration of geysers, including Old Faithful, as well as vividly colored hot springs, fumaroles, and mud pots driven by volcanic heat below the surface. Beyond geothermal wonders, the park encompasses vast forests, sweeping valleys, rivers, waterfalls, and broad plateaus. Yellowstone also protects one of the largest intact temperate ecosystems, offering exceptional wildlife viewing with bison, elk, wolves, bears, and many other species roaming freely.",
+        "weatherInfo": "Located at high elevation, Yellowstone experiences rapid and often unpredictable weather changes throughout the year. Winters are long and harsh, bringing heavy snowfall and prolonged cold that can persist into late spring. Summers are relatively short and mild, but sudden thunderstorms, sharp temperature drops, and even snowfall at higher elevations can occur. Visitors should be prepared for changing conditions in any season and plan for limited services during winter months.",
+        "longitude": -110.5885,
+        "latitude": 44.428,
+        "officialWebsite": "https://www.nps.gov/yell"
+    },
+    {
+        "name": "Yosemite National Park",
+        "state": ["California"],
+        "parkAccess": "Always open",
+        "description": "Yosemite National Park is celebrated worldwide for its dramatic granite cliffs, towering rock formations such as El Capitan and Half Dome, and spectacular waterfalls that surge with snowmelt. The park also preserves ancient giant sequoia groves, open meadows, alpine lakes, and extensive wilderness across the Sierra Nevada. Yosemite has a deep conservation legacy and continues to attract climbers, hikers, photographers, and visitors seeking iconic American landscapes.",
+        "weatherInfo": "Weather in Yosemite varies greatly by elevation. The valley typically has warm, dry summers and cooler winters with occasional snow, while higher elevations can remain snow-covered for much of the year. Spring brings peak waterfall flows but also lingering snow and road closures. Summer afternoons may see thunderstorms, and winter storms can significantly affect travel in mountainous areas.",
+        "longitude": -119.5383,
+        "latitude": 37.8651,
+        "officialWebsite": "https://www.nps.gov/yose"
+    },
+    {
+        "name": "Grand Canyon National Park",
+        "state": ["Arizona"],
+        "parkAccess": "Always open",
+        "description": "Grand Canyon National Park protects one of the most awe-inspiring natural wonders on the planet. Carved over millions of years by the Colorado River, the canyon exposes layered rock formations that reveal Earth’s geological history. Visitors can explore numerous viewpoints along the rim, hike deep into the canyon, raft the river, or simply absorb the immense scale and depth that stretches for miles.",
+        "weatherInfo": "Conditions vary widely by elevation at the Grand Canyon. Summers can be extremely hot at the canyon floor, while the rims remain significantly cooler. Winter snow is common on the South Rim and can limit access, whereas spring and fall bring more moderate temperatures. Large temperature differences between rim and river require careful planning and hydration.",
+        "longitude": -112.1401,
+        "latitude": 36.0544,
+        "officialWebsite": "https://www.nps.gov/grca"
+    },
+    {
+        "name": "Zion National Park",
+        "state": ["Utah"],
+        "parkAccess": "Always open",
+        "description": "Zion National Park features towering sandstone cliffs, narrow slot canyons, and striking desert scenery shaped by the Virgin River. The park is famous for challenging and iconic hikes like Angels Landing and The Narrows, which offer close-up views of canyon walls and river corridors. Zion’s compact geography supports diverse ecosystems ranging from desert scrub to forested plateaus.",
+        "weatherInfo": "Zion experiences hot summers with intense sun exposure, especially in canyon bottoms. Flash floods are a serious hazard in narrow canyons during storms, even when rain falls far away. Winters are generally mild, though snow can occur at higher elevations. Spring and fall are popular due to more comfortable hiking conditions.",
+        "longitude": -113.0263,
+        "latitude": 37.2982,
+        "officialWebsite": "https://www.nps.gov/zion"
+    },
+    {
+        "name": "Bryce Canyon National Park",
+        "state": ["Utah"],
+        "parkAccess": "Always open",
+        "description": "Bryce Canyon National Park is known for its remarkable hoodoos—tall, thin rock spires formed by erosion. The park’s natural amphitheaters create surreal landscapes that glow with vivid colors at sunrise and sunset. Despite its name, Bryce Canyon is a series of bowls carved into the edge of a high plateau rather than a single canyon.",
+        "weatherInfo": "At high elevation, Bryce Canyon is cooler than surrounding desert parks. Winters are cold and snowy, often transforming the hoodoos into a striking winter scene. Summer days are mild but can bring afternoon thunderstorms. Nighttime temperatures drop quickly, and weather conditions can change rapidly.",
+        "longitude": -112.1871,
+        "latitude": 37.593,
+        "officialWebsite": "https://www.nps.gov/brca"
+    },
+    {
+        "name": "Arches National Park",
+        "state": ["Utah"],
+        "parkAccess": "Always open",
+        "description": "Arches National Park preserves more than 2,000 natural stone arches created by erosion over millions of years. Iconic formations like Delicate Arch and Landscape Arch symbolize the American Southwest. The park’s open desert terrain provides expansive vistas, unique rock fins, and excellent opportunities for photography and stargazing.",
+        "weatherInfo": "Summers in Arches are extremely hot with minimal shade, increasing the risk of dehydration. Winters can be cold with occasional snow and icy trails. Sudden storms may cause flash flooding in washes and make rock surfaces slippery. Spring and fall offer the most comfortable conditions for exploration.",
+        "longitude": -109.5925,
+        "latitude": 38.7331,
+        "officialWebsite": "https://www.nps.gov/arch"
+    },
+    {
+        "name": "Rocky Mountain National Park",
+        "state": ["Colorado"],
+        "parkAccess": "Always open",
+        "description": "Rocky Mountain National Park showcases dramatic alpine scenery, including high peaks, tundra, pristine lakes, and abundant wildlife. Trail Ridge Road crosses the Continental Divide and offers panoramic views of the Rockies. The park is a prime destination for hiking, wildlife viewing, and experiencing high-elevation environments.",
+        "weatherInfo": "Weather changes quickly at elevation in Rocky Mountain National Park. Summers often bring afternoon thunderstorms with lightning, while winters are long and snowy. Temperatures can vary significantly in a single day, and conditions at higher elevations are often colder and windier than in valleys.",
+        "longitude": -105.7081,
+        "latitude": 40.3428,
+        "officialWebsite": "https://www.nps.gov/romo"
+    },
+    {
+        "name": "Grand Teton National Park",
+        "state": ["Wyoming"],
+        "parkAccess": "Always open",
+        "description": "Grand Teton National Park features the jagged peaks of the Teton Range rising abruptly above Jackson Hole. The park includes pristine lakes, rivers, and valleys that support diverse wildlife. Its dramatic scenery and relative accessibility make it a favorite for hiking, photography, and wildlife observation.",
+        "weatherInfo": "Grand Teton experiences cold, snowy winters and mild summers. Mountain weather can change rapidly, with thunderstorms common on summer afternoons. Snow is possible at higher elevations year-round, and temperatures often drop quickly after sunset.",
+        "longitude": -110.6818,
+        "latitude": 43.7904,
+        "officialWebsite": "https://www.nps.gov/grte"
+    },
+    {
+        "name": "Glacier National Park",
+        "state": ["Montana"],
+        "parkAccess": "Always open",
+        "description": "Glacier National Park is defined by rugged mountains, active glaciers, turquoise lakes, and alpine meadows. The scenic Going-to-the-Sun Road provides access to breathtaking vistas and trailheads. The park preserves a landscape shaped by ice and supports diverse plant and animal life.",
+        "weatherInfo": "Glacier has a short summer season with cool nights and sudden storms. Snow can fall at any time in higher elevations, even during summer. Winters are long and harsh, limiting access to many areas. Visitors should be prepared for rapidly changing conditions.",
+        "longitude": -113.787,
+        "latitude": 48.7596,
+        "officialWebsite": "https://www.nps.gov/glac"
+    },
+    {
+        "name": "Acadia National Park",
+        "state": ["Maine"],
+        "parkAccess": "Always open",
+        "description": "Acadia National Park protects a rugged Atlantic coastline with granite peaks, carriage roads, forests, and ocean vistas. Located on Mount Desert Island, the park blends coastal and mountain environments. Acadia is known for scenic drives, hiking trails, and sunrise views from Cadillac Mountain.",
+        "weatherInfo": "Coastal weather dominates Acadia, bringing cool breezes and frequent fog. Summers are generally mild, while autumn is crisp and colorful. Winters can be cold, snowy, and windy, particularly along exposed shorelines.",
+        "longitude": -68.2733,
+        "latitude": 44.3386,
+        "officialWebsite": "https://www.nps.gov/acad"
+    },
+    {
+        "name": "Olympic National Park",
+        "state": ["Washington"],
+        "parkAccess": "Always open",
+        "description": "Olympic National Park is uniquely diverse, protecting Pacific coastline, temperate rainforests, and alpine mountains within a single park. Visitors can explore beaches, moss-covered forests, and snow-capped peaks in one trip. The park’s varied ecosystems support exceptional biodiversity.",
+        "weatherInfo": "Olympic’s weather varies dramatically by region. The western side receives heavy rainfall, supporting lush rainforests, while the northeast is relatively drier. Alpine areas receive significant snow in winter, and conditions can shift quickly depending on location and elevation.",
+        "longitude": -123.4987,
+        "latitude": 47.8021,
+        "officialWebsite": "https://www.nps.gov/olym"
+    },
+    {
+        "name": "Sequoia National Park",
+        "state": ["California"],
+        "parkAccess": "Always open",
+        "description": "Sequoia National Park is home to massive giant sequoia trees, including the General Sherman Tree, the largest tree on Earth by volume. The park also encompasses high Sierra peaks, deep canyons, and extensive wilderness. Its landscapes range from foothills to alpine environments.",
+        "weatherInfo": "Lower elevations can be hot in summer, while higher elevations experience cooler temperatures and heavy winter snowfall. Spring snowmelt can affect roads and trails. Weather varies greatly by elevation, and visitors should plan accordingly.",
+        "longitude": -118.6657,
+        "latitude": 36.4864,
+        "officialWebsite": "https://www.nps.gov/seki"
+    },
+    {
+        "name": "Kings Canyon National Park",
+        "state": ["California"],
+        "parkAccess": "Always open",
+        "description": "Kings Canyon National Park features deep glacial canyons, roaring rivers, and high-elevation wilderness. Adjacent to Sequoia, the park protects dramatic landscapes carved by ice and water. It offers opportunities for hiking, camping, and experiencing remote Sierra Nevada terrain.",
+        "weatherInfo": "Higher elevations receive heavy snowfall in winter, limiting access. Summers are warm but can vary with elevation. Seasonal road closures are common, and weather conditions can change quickly in mountainous areas.",
+        "longitude": -118.5551,
+        "latitude": 36.8879,
+        "officialWebsite": "https://www.nps.gov/seki"
+    },
+    {
+        "name": "Death Valley National Park",
+        "state": ["California", "Nevada"],
+        "parkAccess": "Always open",
+        "description": "Death Valley National Park encompasses extreme desert landscapes, including salt flats, sand dunes, and rugged badlands. It is the hottest and driest national park in the United States and holds records for extreme temperatures. Despite harsh conditions, the park hosts unique wildlife and striking geological features.",
+        "weatherInfo": "Summers are dangerously hot, with temperatures often exceeding safe limits for outdoor activity. The best conditions occur from late fall through spring, when temperatures are milder. Rare storms can cause flash flooding, reshaping desert terrain.",
+        "longitude": -116.9325,
+        "latitude": 36.5323,
+        "officialWebsite": "https://www.nps.gov/deva"
+    },
+    {
+        "name": "Joshua Tree National Park",
+        "state": ["California"],
+        "parkAccess": "Always open",
+        "description": "Joshua Tree National Park marks the meeting point of the Mojave and Colorado deserts. The park is known for its distinctive Joshua trees, massive boulder formations, and wide-open desert vistas. It is popular for hiking, rock climbing, and stargazing.",
+        "weatherInfo": "Summers are extremely hot, while winters are pleasant during the day but cold at night. Strong winds can occur, and water sources are limited. Visitors should plan carefully for temperature extremes and desert conditions.",
+        "longitude": -115.9007,
+        "latitude": 33.8734,
+        "officialWebsite": "https://www.nps.gov/jotr"
+    },
+    {
+        "name": "Great Smoky Mountains National Park",
+        "state": ["Tennessee", "North Carolina"],
+        "parkAccess": "Always open",
+        "description": "Great Smoky Mountains National Park is known for its misty ridges, rich biodiversity, and historic structures. The park protects ancient Appalachian forests and offers extensive hiking trails, waterfalls, and scenic drives. It is the most visited national park in the United States.",
+        "weatherInfo": "Frequent rain and fog shape the park’s environment. Temperatures are cooler at higher elevations, and weather can vary greatly within short distances. Autumn is especially popular, while winter snow is possible at higher elevations.",
+        "longitude": -83.507,
+        "latitude": 35.6532,
+        "officialWebsite": "https://www.nps.gov/grsm"
+    },
+    {
+        "name": "Everglades National Park",
+        "state": ["Florida"],
+        "parkAccess": "Always open",
+        "description": "Everglades National Park protects a vast subtropical wilderness of wetlands, sawgrass marshes, and mangrove forests. The park is home to alligators, crocodiles, manatees, and numerous bird species. Its slow-moving waters create a unique and fragile ecosystem.",
+        "weatherInfo": "The Everglades has two main seasons: a dry season with cooler, drier weather and a wet season marked by heat, humidity, and frequent thunderstorms. Mosquitoes are intense during the wet season, and storms can develop rapidly.",
+        "longitude": -80.933,
+        "latitude": 25.2866,
+        "officialWebsite": "https://www.nps.gov/ever"
+    },
+    {
+        "name": "Denali National Park and Preserve",
+        "state": ["Alaska"],
+        "parkAccess": "Always open",
+        "description": "Denali National Park and Preserve centers on Denali, the highest peak in North America. The park features vast tundra, glaciers, and wide-open landscapes supporting wildlife such as grizzlies, caribou, and wolves. Its remote character offers a true wilderness experience.",
+        "weatherInfo": "Summers are cool and short, while winters are extremely cold and long. Weather can change rapidly, and snow is possible at any time in higher elevations. Conditions often limit access, particularly outside the brief summer season.",
+        "longitude": -150.4949,
+        "latitude": 63.1148,
+        "officialWebsite": "https://www.nps.gov/dena"
+    },
+    {
+        "name": "Hawaiʻi Volcanoes National Park",
+        "state": ["Hawaii"],
+        "parkAccess": "Always open",
+        "description": "Hawaiʻi Volcanoes National Park showcases active volcanic landscapes on the Big Island, including Kīlauea and Mauna Loa. The park features lava flows, craters, rainforests, and stark volcanic plains. It offers a rare opportunity to witness Earth’s geological processes in action.",
+        "weatherInfo": "Weather varies greatly by elevation, ranging from warm coastal conditions to cool, rainy highlands. Volcanic activity can affect air quality through volcanic smog, known as vog. Rain and sudden weather shifts are common.",
+        "longitude": -155.2923,
+        "latitude": 19.4194,
+        "officialWebsite": "https://www.nps.gov/havo"
+    },
+    {
+        "name": "Mount Rainier National Park",
+        "state": ["Washington"],
+        "parkAccess": "Always open",
+        "description": "Mount Rainier National Park is dominated by a massive glacier-capped volcano rising above surrounding forests and meadows. The park is famous for wildflower displays, waterfalls, and extensive trail systems. Its dramatic elevation creates striking scenery year-round.",
+        "weatherInfo": "The park receives heavy snowfall in winter, and many areas remain snow-covered into summer. Clouds and rain are common, and weather can change quickly with elevation. Short summer seasons at higher elevations limit access to some trails.",
+        "longitude": -121.7269,
+        "latitude": 46.8799,
+        "officialWebsite": "https://www.nps.gov/mora"
+    }
+]
+
