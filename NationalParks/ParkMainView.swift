@@ -86,10 +86,12 @@ struct ParkMainView: View {
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button {
-                                parkVM.isLoading = true
                                 Task {
+                                    withAnimation(.easeIn(duration: 0.5)) {
+                                        parkVM.isLoading = true
+                                    }
                                     await parkVM.loadParks()
-                                    withAnimation(.easeIn(duration: 0.8)) {
+                                    withAnimation(.easeInOut(duration: 0.8)) {
                                         parkVM.isLoading = false
                                     }
                                 }
