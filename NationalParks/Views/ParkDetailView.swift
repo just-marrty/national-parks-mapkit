@@ -70,7 +70,7 @@ struct ParkDetailView: View {
                     } label: {
                         Map(position: $position) {
                             Annotation(park.name, coordinate: park.location) {
-                                Image(systemName: "tree.fill")
+                                Image(systemName: Strings.treeFill)
                                     .font(.system(size: 12))
                                     .symbolEffect(.bounce, options: .repeat(.periodic(delay: 1)), value: symbolBounce)
                                     .foregroundStyle(.black.opacity(0.5))
@@ -88,7 +88,7 @@ struct ParkDetailView: View {
                 .padding(.bottom)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Description")
+                    Text(Strings.description)
                         .font(.system(size: 22, weight: .heavy, design: .rounded))
                         .shadow(radius: 15)
                     Text(park.description)
@@ -97,7 +97,7 @@ struct ParkDetailView: View {
                 .padding(.bottom)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Weather info")
+                    Text(Strings.weatherInfo)
                         .font(.system(size: 22, weight: .heavy, design: .rounded))
                         .shadow(radius: 15)
                     Text(park.weatherInfo)
@@ -106,7 +106,7 @@ struct ParkDetailView: View {
                 .padding(.bottom)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Park access")
+                    Text(Strings.parkAccess)
                         .font(.system(size: 22, weight: .heavy, design: .rounded))
                         .shadow(radius: 15)
                     Text(park.parkAccess)
@@ -115,7 +115,7 @@ struct ParkDetailView: View {
                 .padding(.bottom)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Official link")
+                    Text(Strings.officialLink)
                         .font(.system(size: 22, weight: .heavy, design: .rounded))
                         .shadow(radius: 15)
                     
@@ -123,7 +123,7 @@ struct ParkDetailView: View {
                         Link(url.absoluteString, destination: url)
                             .font(.system(size: 18, design: .rounded))
                     } else {
-                        Text("N/A")
+                        Text(Strings.notAvailable)
                             .font(.system(size: 18, design: .rounded))
                     }
                 }

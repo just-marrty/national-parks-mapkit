@@ -20,13 +20,13 @@ struct ParkMapView: View {
         ZStack(alignment: .bottom) {
             Map(position: $position) {
                 Annotation(park.name, coordinate: park.location) {
-                    Image(systemName: "tree.fill")
+                    Image(systemName: Strings.treeFill)
                 }
                 .annotationTitles(.hidden)
             }
             .mapStyle(selectedOption.mapStyle)
             
-            Picker("Map options", selection: $selectedOption) {
+            Picker(Strings.mapOptions, selection: $selectedOption) {
                 ForEach(MapOptions.allCases, id: \.self) { style in
                     Text(style.rawValue.capitalized)
                 }

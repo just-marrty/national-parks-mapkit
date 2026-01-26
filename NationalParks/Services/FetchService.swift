@@ -7,15 +7,11 @@
 
 import Foundation
 
-enum FileError: Error {
-    case invalidURL
-    case decodingFail
-}
-
-struct FetchService {
+struct FetchService: FetchServiceProtocol {
     
     func fetchParks() async throws -> [Park] {
-        guard let url = Bundle.main.url(forResource: "nationalparks", withExtension: "json") else {
+        guard let url = Bundle.main.url(forResource: JSONResource.nationalParks, withExtension: JSONResource.json) else {
+            print("Invalid URL")
             throw FileError.invalidURL
         }
         
@@ -24,6 +20,7 @@ struct FetchService {
             let decoder = JSONDecoder()
             return try decoder.decode([Park].self, from: data)
         } catch {
+            print("Decoding Error: \(error.localizedDescription)")
             throw FileError.decodingFail
         }
     }

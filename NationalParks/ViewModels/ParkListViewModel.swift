@@ -16,9 +16,9 @@ class ParkListViewModel {
     var isLoading: Bool = false
     var errorMessage: String? = nil
     
-    private let fetchService: FetchService
+    private let fetchService: FetchServiceProtocol
     
-    init(fetchService: FetchService) {
+    init(fetchService: FetchServiceProtocol) {
         self.fetchService = fetchService
     }
     
@@ -28,7 +28,7 @@ class ParkListViewModel {
             let parks = try await fetchService.fetchParks()
             self.parks = parks.map(ParkViewModel.init)
         } catch {
-            errorMessage = "There seems to be a problem, we're sorry."
+            errorMessage = Strings.errorMessage
         }
     }
 }
