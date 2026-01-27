@@ -28,6 +28,15 @@ The project demonstrates modern SwiftUI patterns and MVVM architecture:
 - Computed property `image` - generates image asset name from park name (lowercased, spaces removed)
 - Computed property `location` - converts lat/long to `CLLocationCoordinate2D`
 
+### Constants
+
+**Strings** - Centralized UI string constants
+
+- Organizes all UI strings, error messages, and system image names
+- Improves code maintainability and makes future localization easier
+- Eliminates hardcoded strings throughout the codebase
+- Used across all views and view models for consistent text display
+
 **MapOptions** - Enum for map style selection
 - Cases: `standard`, `hybrid`, `imagery`
 - Computed property `mapStyle` - maps enum to MapKit's `MapStyle`
