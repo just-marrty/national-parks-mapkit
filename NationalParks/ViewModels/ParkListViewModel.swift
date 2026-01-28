@@ -8,6 +8,7 @@
 import Foundation
 import Observation
 import MapKit
+import OSLog
 
 @Observable
 @MainActor
@@ -16,6 +17,8 @@ class ParkListViewModel {
     var isLoading: Bool = false
     var errorMessage: String? = nil
     
+    private let logger = Logger.loadParks
+    
     private let fetchService: FetchServiceProtocol
     
     init(fetchService: FetchServiceProtocol) {
@@ -23,11 +26,14 @@ class ParkListViewModel {
     }
     
     func loadParks() async {
+        logger.info("Parks are loading")
         errorMessage = nil
         do {
             let parks = try await fetchService.fetchParks()
+            logger.info("Parks loaded successfully")
             self.parks = parks.map(ParkViewModel.init)
         } catch {
+            logger.error("Loading parks failed")
             errorMessage = Strings.errorMessage
         }
     }
