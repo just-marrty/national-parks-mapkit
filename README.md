@@ -88,6 +88,50 @@ The project demonstrates modern SwiftUI patterns and MVVM architecture:
 - Map style picker at bottom (segmented control)
 - Three map styles: Standard, Hybrid, Imagery
 
+## Logging
+
+The project uses unified logging with OSLog for development and debugging:
+
+### Logger+Extensions
+
+Centralized logger configuration with category-based organization:
+- `subsystem` - Automatically derived from `Bundle.main.bundleIdentifier`
+- Category-specific loggers:
+  - `Logger.app` - Application lifecycle events
+  - `Logger.fetchService` - JSON file loading and parsing operations
+  - `Logger.loadParks` - Park data loading in ViewModel
+  - `Logger.parkMainView` - Main view navigation and user interactions
+
+### Logging Usage
+
+**Application (`NationalParksApp`)**
+- `logger.info("App started")` - App launch
+
+**FetchService**
+- `logger.info("Fetching JSON Started")` - Start fetching JSON from bundle
+- `logger.error("Invalid JSON file")` - File not found in bundle
+- `logger.info("Fetching JSON completed")` - Data successfully fetched
+- `logger.error("Decoding JSON Error: ...")` - JSON parsing failure
+
+**ParkListViewModel**
+- `logger.info("Parks are loading")` - Begin park loading
+- `logger.info("Parks loaded successfully")` - Successful load
+- `logger.error("Loading parks failed")` - Load error
+
+**ParkMainView**
+- `logger.info("Navigating to park detail: \(park.name)")` - Park selection
+- `logger.debug("Reload button tapped")` - User interaction
+- `logger.info("Grid of parks reloaded")` - After refresh
+- `logger.error("Error block appeared")` - Error state displayed
+
+### Benefits
+
+- Category-based filtering in Xcode Console
+- Filter by subsystem: `subsystem:com.martinhrbackek.NationalParks`
+- Filter by category: `parkMainView`, `fetchService`, etc.
+- All loggers use `private let` for proper encapsulation
+- Native integration with Instruments and Console.app
+
 ## Dependency Injection
 
 The project uses constructor-based dependency injection:
@@ -131,6 +175,7 @@ Each park includes:
 - **Animation** - Smooth transitions with `withAnimation` and opacity
 - **SF Symbols** - System icons for UI elements
 - **Link** - Native web link handling
+- **OSLog** - Unified logging system for debugging and monitoring
 
 ## Requirements
 
