@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import OSLog
 
 struct ParkMainView: View {
     
@@ -17,6 +18,8 @@ struct ParkMainView: View {
     }
     
     private let columns: [GridItem] = [GridItem(.flexible())]
+    
+    private let logger = Logger.parkMainView
     
     var body: some View {
         NavigationStack {
@@ -48,6 +51,9 @@ struct ParkMainView: View {
                         
                     }
                     .multilineTextAlignment(.center)
+                    .onAppear {
+                        logger.error("Error block appeared")
+                    }
                     .padding()
                 } else if !parkVM.isLoading {
                     ScrollView {
@@ -85,11 +91,13 @@ struct ParkMainView: View {
                     .safeAreaPadding(10)
                     .padding(.horizontal, 5)
                     .navigationDestination(for: ParkViewModel.self) { park in
-                        ParkDetailView(park: park, position: .camera(MapCamera(centerCoordinate: park.location, distance: 100000)))
+                        logger.info("Navigating to park detail: \(park.name)")
+                        return ParkDetailView(park: park, position: .camera(MapCamera(centerCoordinate: park.location, distance: 100000)))
                     }
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button {
+                                logger.debug("Reload button tapped")
                                 Task {
                                     withAnimation(.easeIn(duration: 0.5)) {
                                         parkVM.isLoading = true
@@ -98,6 +106,7 @@ struct ParkMainView: View {
                                     withAnimation(.easeInOut(duration: 0.8)) {
                                         parkVM.isLoading = false
                                     }
+                                    logger.info("Grid of parks reloaded")
                                 }
                             } label: {
                                 Image(systemName: Strings.arrowClockwise)

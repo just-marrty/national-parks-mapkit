@@ -6,21 +6,27 @@
 //
 
 import Foundation
+import OSLog
 
 struct FetchService: FetchServiceProtocol {
     
+    private let logger = Logger.fetchService
+    
     func fetchParks() async throws -> [Park] {
+        logger.info("Fetching JSON Started")
         guard let url = Bundle.main.url(forResource: JSONResource.nationalParks, withExtension: JSONResource.json) else {
-            print("Invalid URL")
+            logger.error("Invalid JSON file")
             throw FileError.invalidURL
         }
         
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
-            return try decoder.decode([Park].self, from: data)
+            let parks = try decoder.decode([Park].self, from: data)
+            logger.info("Fetching JSON completed")
+            return parks 
         } catch {
-            print("Decoding Error: \(error.localizedDescription)")
+            logger.error("Decoding JSON Error: \(error.localizedDescription)")
             throw FileError.decodingFail
         }
     }
